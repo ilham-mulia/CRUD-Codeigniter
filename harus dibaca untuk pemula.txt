@@ -1,0 +1,39 @@
+atur config...
+di file application/config/config.php 
+atur line no 26 : menjadi :
+
+$config['base_url'] = 'http://localhost/codeigniter/';
+
+
+-----------------------------------------------------------------
+atur auto load.php ( include css )
+di file application/config/autoload.php 
+atur line no 92 : menjadi :
+
+
+$autoload['helper'] = array('url');
+----------------------------------------------------------
+
+membuat css/boostra pada CI
+buat folder baru pada folder ci
+dengan nama aset
+lalau buat file style.css
+
+untuk memanggil css/bosstrap dengan script :
+
+<link rel="stylesheet" href="<?php echo base_url('aset/style.css'); ?>"> 
+-----------------------------------------------------------------------------------------------
+
+
+atur database ..
+di file application/config/database.php 
+--------------------------------------------------------------------------------------------
+
+atur load database
+di file application/config/autoload.php 
+atur line no 61 : menjadi :
+
+$autoload['libraries'] = array('database');
+
+
+------------------------------------------------------------------------------------------------
